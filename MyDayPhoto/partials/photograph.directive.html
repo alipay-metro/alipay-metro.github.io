@@ -1,0 +1,29 @@
+<div id="photograph" ng-hide="over">
+	<div id="left">
+		<video src="" id="video" width="500" height="480"></video>
+		<button id="graph" ng-hide="graph">拍照</button>
+		<button id="startgraph" ng-show="graph">开启摄像头</button>
+	</div>
+	<div id="right">
+		<div id="word" ng-hide="rightWord">
+			<p>美好的壹天從這裏開始</p>
+			<p>自拍壹張，永葆青春</p>
+			<p>A beautiful day begins here</p>
+			<p>A piece of self, eternal youth</p>
+		</div>
+		<div id="photo-word" ng-show="photoandword">
+			<canvas id="person-photo" width="500" height="480"></canvas>
+			<br>
+			<textarea name="" id="today-word"></textarea>
+			<br>
+			<button id="save">保存</button>
+		</div>
+		
+	</div>
+</div>
+<div id="over" ng-show="over">
+	<div id="today-info">
+		<img src="../img/do.jpg" alt="">
+		<p id="user-say">开启美好的今天</p>
+	</div>
+</div>
